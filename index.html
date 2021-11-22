@@ -4,112 +4,468 @@
   <meta charset='utf-8'>
   <meta content='width=device-width, initial-scale=1' name='viewport'>
 
+  <!-- SEO -->
+  <meta
+    content='Crown Capital is a decentralized autonomous organization (DAO) focused on developing a strong presence in the play-to-earn metaverse.'
+    name='description'>
+  <meta content='Crown Capital DAO' name='og:title' property='og:title'>
+  <meta content='Crown Capital DAO' name='twitter:card'>
+  <link href='https://crowncapital.xyz/' rel='canonical'>
+
   <!-- Bootstrap CSS -->
   <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css'
         integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' rel='stylesheet'>
 
-  <link href='css/index.css' rel='stylesheet' type='text/css'>
+  <!-- fonts -->
+  <link href='https://fonts.googleapis.com' rel='preconnect'>
+  <link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
+  <link href='https://fonts.googleapis.com/css2?family=Baskervville&family=Roboto:wght@300&display=swap'
+        rel='stylesheet'>
 
-  <title>Crown Capital</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src='https://www.googletagmanager.com/gtag/js?id=G-29QNBFL314'></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-29QNBFL314');
+  </script>
+
+  <link href='css/index.css' rel='stylesheet' type='text/css'>
+  <link href='/images/favicon.ico' rel='icon' type='image/x-icon'>
+
+  <title>Crown Capital DAO</title>
 </head>
 
 <body>
-<header class='border-bottom'>
-  <nav class='navbar fixed-top navbar-expand-lg navbar-dark navbar-bg'>
+<header>
+  <nav class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark-blue'>
     <div class='container-fluid'>
-      <a class='navbar-brand' href='#'>
-        <img alt='Crown Capital Coin' src='images/coin-white-bg.png'>
-      </a>
       <button aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'
               class='navbar-toggler'
               data-bs-target='#navbarNavDropdown' data-bs-toggle='collapse' type='button'>
         <span class='navbar-toggler-icon'></span>
       </button>
-      <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
-        <div class='navbar-nav'>
-          <a class='nav-link nav-link-text' href='#'>About</a>
-          <a class='nav-link nav-link-text' href='#'>Invest</a>
-          <a class='nav-link nav-link-text' href='#'>Portfolio</a>
-          <a class='nav-link nav-link-text' href='#'>Whitepaper</a>
-        </div>
-      </div>
-      <div>
-        <a class='navbar-icon-anchor' href=''>
-          <svg class='bi bi-discord navbar-icon' fill='rgb(250, 249, 246)' viewBox='0 0 16 16'
-               xmlns='http://www.w3.org/2000/svg'>
-            <path
-              d='M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z' />
-          </svg>
-        </a>
-        <a class='navbar-icon-anchor' href=''>
-          <svg class='bi bi-twitter navbar-icon' fill='rgb(250, 249, 246)' viewBox='0 0 16 16'
-               xmlns='http://www.w3.org/2000/svg'>
-            <path
-              d='M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z' />
-          </svg>
-        </a>
+      <div class='collapse navbar-collapse justify-content-center' id='navbarNavDropdown'>
+        <ul class='navbar-nav align-items-center'>
+          <li class='nav-item dropdown fs-5'>
+            <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#'
+               id='navbarDropdownMenuLink' role='button'>
+              Tokenomics
+            </a>
+            <ul aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu bg-dark-blue align-bottom'>
+              <li>
+                <a class='dropdown-item navbar-icon'
+                   href='/pdf/crown-capital-whitepaper.pdf'
+                   target='_blank'>Whitepaper</a>
+              </li>
+              <li>
+                <a class='dropdown-item navbar-icon disabled' href='#'>
+                  Buy Crown
+                </a>
+              </li>
+              <li><a class='dropdown-item navbar-icon disabled' href='#'>Staking</a></li>
+              <li><a class='dropdown-item navbar-icon' data-bs-target='#faq-page' data-bs-toggle='collapse'>FAQ</a></li>
+            </ul>
+          </li>
+          <li class='nav-item dropdown fs-5'>
+            <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#' role='button'>
+              Portfolio
+            </a>
+            <ul aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu bg-dark-blue'>
+              <li>
+                <a class='dropdown-item' data-bs-target='#guild-of-guardians-page' data-bs-toggle='collapse'>
+                  <img alt='Guild of Guardians Logo' class='navbar-icon' src='/images/gog-logo.png'>
+                  Guild of Guardians
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item' data-bs-target='#echoes-of-empire-page' data-bs-toggle='collapse'>
+                  <img alt='Echoes of Empire Logo' class='navbar-icon' src='/images/eoe-logo.png'>
+                  Echoes of Empire
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item' data-bs-target='#axie-infinity-page' data-bs-toggle='collapse'>
+                  <img alt='Axie Infinity Logo' class='navbar-icon' src='/images/axie-infinity-axs-logo.png'>
+                  Axie Infinity
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item disabled' data-bs-target='#illuvium-page' data-bs-toggle='collapse'>
+                  <img alt='Illuvium Logo' class='navbar-icon' src='/images/illuvium-logo.svg'>
+                  Illuvium
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item' data-bs-target='#mirandus-page' data-bs-toggle='collapse'>
+                  <img alt='Mirandus Logo' class='navbar-icon' src='/images/gala-logo.png'>
+                  Mirandus
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item disabled' data-bs-target='#metalcore-page' data-bs-toggle='collapse'>
+                  <img alt='Metalcore Logo' class='navbar-icon' src='/images/metalcore-logo.png'>
+                  Metalcore
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='gold-text navbar-brand'>
+            <div class='container ps-5'>
+              <div class='row navbar-brand mx-auto d-block' style='width: 50%'>
+                <a data-bs-target='#landing-page' data-bs-toggle='collapse'>
+                  <img alt='Crown Capital Logo' class='img-responsive' src='images/crowndragon.png'>
+                </a>
+              </div>
+              <div class='row navbar-brand'>
+                <a class='fs-3' data-bs-target='#landing-page' data-bs-toggle='collapse'>
+                  <span class=' align-middle text-start'>Crown Capital</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class='nav-item dropdown fs-5'>
+            <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#'
+               role='button'>
+              Community
+            </a>
+            <ul aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu bg-dark-blue'>
+              <li>
+                <a class='dropdown-item' href='https://discord.gg/tuNC73ZJJJ' target='_blank'>
+                  <svg class='bi bi-discord navbar-icon' fill='rgba(255,204,99,216)' viewBox='0 0 16 16'
+                       xmlns='http://www.w3.org/2000/svg'>
+                    <path
+                      d='M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z' />
+                  </svg>
+                  Discord
+                </a>
+              </li>
+              <li><a class='dropdown-item' href='https://twitter.com/CrownCapitalDao' target='_blank'>
+                <svg class='bi bi-twitter navbar-icon' fill='rgba(255,204,99,216)' viewBox='0 0 16 16'
+                     xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z' />
+                </svg>
+                Twitter
+              </a></li>
+              <li><a class='dropdown-item' href='https://t.me/joinchat/SoBbo0UlARg5ZmY0' target='_blank'>
+                <svg class='bi bi-telegram navbar-icon' fill='rgba(255,204,99,216)' height='16' viewBox='0 0 16 16'
+                     width='16' xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z' />
+                </svg>
+                Telegram</a>
+              </li>
+              <li><a class='dropdown-item disabled' href='#'>
+                <svg class='bi bi-medium navbar-icon' fill='rgba(255,204,99,216)' height='16' viewBox='0 0 16 16'
+                     width='16'
+                     xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z' />
+                </svg>
+                Medium</a>
+              </li>
+              <li><a class='dropdown-item disabled' href='#'>
+                <svg class='bi bi-envelope navbar-icon' fill='rgba(255,204,99,216)' viewBox='0 0 16 16'
+                     xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z' />
+                </svg>
+                Email</a>
+              </li>
+            </ul>
+          </li>
+          <li class='nav-item dropdown fs-5'>
+            <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#' role='button'>
+              Governance
+            </a>
+            <ul aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu bg-dark-blue'>
+              <li>
+                <a class='dropdown-item navbar-icon disabled' href='#'>
+                  Voting
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item navbar-icon' data-bs-target='#escrow-accounts-page' data-bs-toggle='collapse'>
+                  Escrow
+                </a>
+              </li>
+              <li>
+                <a class='dropdown-item navbar-icon' data-bs-target='#founder-page' data-bs-toggle='collapse'>
+                  Founder
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <div class='container'>
-    <img alt='Crown Capital Large Logo' class='mx-auto d-block' src='images/logo-large.png' style='max-height: 250px'>
-  </div>
 </header>
 <main>
-  <article>
-    <section>
-      <div class='container-fluid pt-5'>
-        <div class='row'>
-          <div class='col-3 border-end'>
 
-          </div>
+  <!-- Landing Page -->
+  <div class='container-fluid py-5 my-5 collapse show align-middle' id='landing-page'>
+    <article>
+      <section>
+        <div class='row'></div>
+        <h1 class='lead text-center pt-5 fs-1'>
+          Welcome
+        </h1>
+        <div class='row justify-content-evenly pt-5'>
+          <div class='col-3'></div>
           <div class='col-6'>
-            <p class='lead text-center fs-3'>
-              Crown Capital is an industry-leading DAO focused on investment in blockchain gaming platforms
+            <p class='fs-4 pt-5 text-start'>
+              <span class='fw-bold'>Crown Capital</span> is a decentralized autonomous organization focused on
+              developing a strong presence in the play-to-earn metaverse.
             </p>
-            <p class='pt-1 text-center'>Investment is only considered to platforms that meet the following
-              criteria:</p>
-            <ul>
-              <li>There is an experienced team and studio behind the game development and management who communicate
-                effectively and build trust with the player base
-              </li>
-              <li>The game is not purely a social platform and has at least one core play-to-earn mechanism and one or
-                more
-                activities considered enjoyable by gamers.
-              </li>
-              <li>It is scalable with long-term income and capital gains potential. We are not looking to invest in
-                ‘pump
-                and dumps’.
-              </li>
-              <li>The game developers have shown they understand scarcity and put definitive caps on how many assets
-                will
-                be
-                released and/or put in place reasonable burn mechanics.
-              </li>
-              <li>It has at least a rudimentary mobile version in the works that will allow players from developing
-                nations
-                partial access.
-              </li>
-              <li>It is free to play or at least has a scholarship-type program in place.</li>
-              <li>It has an exchange tradable token and ideally on the Ethereum network.
-              </li>
-            </ul>
           </div>
-          <div class='col-3 border-start'>
+          <div class='col-3'></div>
+        </div>
+        <div class='row justify-content-evenly pt-5'>
+          <div class='col-3'></div>
+          <div class='col-6'>
+            <p class='fs-4 pt-5 text-start'>
+              Our mission is to maximize value accrual while forging a
+              dedicated &
+              passionate community of blockchain
+              enthusiasts, investors, collectors, and players.</p>
+          </div>
+          <div class='col-3'></div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- FAQ Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='faq-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          FAQ
+        </h1>
+        <div class='container pt-5'>
+          <div class='row'>
+            <div class='col-3'></div>
+            <div class='col-6'>
+              <h4 class='text-center'>How can invest in Crown Capital?</h4>
+              <p class='text-center fs-5 my-5'>Crown Capital is currently in its pre-seed phase. To learn more please
+                read
+                our
+                <a class='gold-text' href='/pdf/crown-capital-whitepaper.pdf' target='_blank'>whitepaper</a> or visit
+                our community
+                section.
+              </p>
+            </div>
+            <div class='col-3'></div>
           </div>
         </div>
-      </div>
-    </section>
-  </article>
-</main>
-<footer class='pt-5'>
-  <div class='border-top pt-5'>
+      </section>
+    </article>
   </div>
-</footer>
+
+  <!-- Illuvium Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='illuvium-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Illuvium
+        </h1>
+        <div class='row pt-5'>
+          <div class='col-2'></div>
+          <div class='col-8 opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-2'></div>
+        </div>
+        <p class='text-center fs-6 my-5'>Asset info coming soon!</p>
+      </section>
+    </article>
+  </div>
+
+  <!-- Mirandus Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='mirandus-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Mirandus
+        </h1>
+        <div class='row pt-5'>
+          <div class='col-2'></div>
+          <div class='col-8 opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-2'></div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- Echoes of Empire Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='echoes-of-empire-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Echoes of Empire
+        </h1>
+        <div class='row pt-5'>
+          <div class='col-2'></div>
+          <div class='col-8 opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-2'></div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- Axie Infinity Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='axie-infinity-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Axie Infinity
+        </h1>
+        <div class='row pt-5'>
+          <div class='col-2'></div>
+          <div class='col-8 opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-2'></div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- FAQ Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='escrow-accounts-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Escrow Accounts
+          <i class='bi bi-wallet2'></i>
+        </h1>
+        <div class='row pt-5'>
+          <div class='col-2'></div>
+          <div class='col-8 opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-2'></div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- Guild of Guardians Page -->
+  <div class='container-fluid py-5 my-5 collapse' id='guild-of-guardians-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Guild of Guardians
+        </h1>
+        <div class='row pt-5'>
+          <div class='col-2'></div>
+          <div class='col-8 opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-2'></div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- Founder Page -->
+  <div class='container-fluid my-5 collapse' id='founder-page'>
+    <article>
+      <section>
+        <h1 class='lead text-center display-5'>
+          Founder
+        </h1>
+        <div class='container pt-1'>
+          <div class='row'>
+            <div class='col-2'></div>
+            <div class='col-8'>
+              <div class='img-block text-center mb-5 pt-2'>
+                <img alt='Dylan Shub founder picture' class='img-fluid img-thumbnail rounded-circle'
+                     src='/images/dylan-shub.png'>
+                <div class='content mt-2'>
+                  <h4 class='pt-4'>Dylan Shub</h4>
+                  <p class='text-start fs-5'>‘Raised on art’, Dylan started attending Sotheby’s Auctions at the
+                    age of
+                    seven
+                    and
+                    formed his
+                    first collection of Royal Doulton character jugs at the age of nine. His formative years were filled
+                    with strategy games and collectible cards, such as Magic the Gathering of which he was South
+                    Africa’s youngest judge at the age of twelve. He has spent over a decade obsessed with the coming
+                    metaverse and ran active roleplay communities in Second Life.
+
+                    After completing his education, Dylan began managing his family’s investment portfolio as well as
+                    working as an independent private banker on behalf of high net worth individuals and family offices.
+                    In 2009 he co-hosted Israel’s first Wealth management conference with STEP. Since 2012 he has been a
+                    passionate investor in traditional collectables and in recent years has shifted his entire focus to
+                    NFTs and blockchain games.</p>
+                </div>
+              </div>
+            </div>
+            <div class='col-2'></div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+</main>
 
 <!-- Bootstrap + Popper JS -->
 <script crossorigin='anonymous'
         integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
         src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'></script>
+
+<!-- JQuery -->
+<script crossorigin='anonymous'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+        src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+
+<!-- Fontawesome -->
+<script crossorigin='anonymous' src='https://kit.fontawesome.com/b9eb730cd3.js'></script>
+
+<!-- Main custom JavaScript -->
+<script src='/scripts/index.js'></script>
 </body>
 </html>
