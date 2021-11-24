@@ -1,0 +1,121 @@
+body {
+    padding-top: 70px;
+    background: url('/images/cc-waves-bg-mobile.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar .navbar-brand a {
+    text-decoration: none;
+}
+
+.navbar .navbar-brand span {
+    color: rgba(255, 204, 99, 216) !important;
+}
+
+.gold-text {
+    color: rgba(255, 204, 99, 216) !important;
+}
+
+.navbar {
+    font-family: 'Baskervville', serif;
+}
+
+.navbar a {
+    cursor: pointer;
+}
+
+.navbar-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    color: rgb(110, 87, 35) !important;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(248, 248, 255, 0.84);
+}
+
+.bg-dark-blue {
+    background-color: rgb(6, 12, 24) !important;
+}
+
+.bg-dark-blue-opaque {
+    background-color: rgb(6, 12, 24, 0.25) !important;
+}
+
+main h1 {
+    color: rgba(255, 204, 99, 216);
+    font-family: 'Baskervville', serif;
+}
+
+main h4 {
+    color: rgba(255, 204, 99, 216);
+    font-family: 'Baskervville', serif;
+}
+
+.nav-item a .disabled {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+
+.nav-item a {
+    color: rgba(255, 204, 99, 216);
+}
+
+th {
+    font-family: 'Baskervville', serif;
+}
+
+.nav-item a:focus {
+    color: rgb(110, 87, 35);
+    outline: none;
+}
+
+.nav-link:hover {
+    color: rgb(110, 87, 35) !important;
+}
+
+main p {
+    color: rgba(255, 255, 255, 0.95);
+    font-family: 'Roboto', sans-serif;
+}
+
+.off-white-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.table-dark {
+    --bs-table-bg: rgb(6, 12, 24);
+    --bs-table-striped-bg: rgb(6, 12, 24);
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: rgb(6, 12, 24);
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: rgb(6, 12, 24);
+}
+
+.navbar-nav li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table td a:hover {
+    color: rgb(110, 87, 35);
+}
