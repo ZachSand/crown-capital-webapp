@@ -1,6 +1,6 @@
 body {
     padding-top: 70px;
-    background: url('/images/cc-waves-no-gold.jpeg') no-repeat center center fixed;
+    background: url('/images/cc-waves-bg-mobile.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -51,6 +51,10 @@ body {
     background-color: rgb(6, 12, 24) !important;
 }
 
+.bg-dark-blue-opaque {
+    background-color: rgb(6, 12, 24, 0.25) !important;
+}
+
 main h1 {
     color: rgba(255, 204, 99, 216);
     font-family: 'Baskervville', serif;
@@ -70,17 +74,17 @@ main h4 {
     color: rgba(255, 204, 99, 216);
 }
 
+th {
+    font-family: 'Baskervville', serif;
+}
+
 .nav-item a:focus {
     color: rgb(110, 87, 35);
+    outline: none;
 }
 
 .nav-link:hover {
     color: rgb(110, 87, 35) !important;
-}
-
-.navbar {
-    padding-bottom: 0;
-    padding-top: 0;
 }
 
 main p {

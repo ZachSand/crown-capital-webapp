@@ -10,7 +10,17 @@
     name='description'>
   <meta content='Crown Capital DAO' name='og:title' property='og:title'>
   <meta content='Crown Capital DAO' name='twitter:card'>
+  <meta content='website' property='og:type' />
+  <meta content='https://www.crowncapital.xyz' property='og:url' />
+  <meta content='https://www.crowncapital.xyz/images/crowndragon.png' property='og:image' />
+  <meta
+    content='Crown Capital is a decentralized autonomous organization (DAO) focused on developing a strong presence in the play-to-earn metaverse.'
+    property='og:description' />
+  <meta content='#FFCC63FF' name='theme-color'>
   <link href='https://crowncapital.xyz/' rel='canonical'>
+
+  <!-- Include this to make the og:image larger -->
+  <meta content='summary_large_image' name='twitter:card'>
 
   <!-- Bootstrap CSS -->
   <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css'
@@ -44,24 +54,29 @@
 
 <body>
 <header>
-  <nav class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark-blue'>
+  <nav class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark-blue fs-5'>
     <div class='container-fluid'>
       <button aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'
               class='navbar-toggler'
               data-bs-target='#navbarNavDropdown' data-bs-toggle='collapse' type='button'>
         <span class='navbar-toggler-icon'></span>
       </button>
-      <div class='collapse navbar-collapse justify-content-center' id='navbarNavDropdown'>
+      <div class='collapse navbar-collapse justify-content-md-center' id='navbarNavDropdown'>
         <ul class='navbar-nav align-items-center'>
-          <li class='nav-item dropdown fs-5'>
+          <li class='nav-item'>
+            <a class='navbar-brand' data-bs-target='#landing-page' data-bs-toggle='collapse'>
+              <img alt='Crown Capital Logo' class='img-responsive' src='images/crowndragon.png'>
+              <span class='align-middle'>Crown Capital</span>
+            </a>
+          </li>
+          <li class='nav-item dropdown'>
             <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#'
                id='navbarDropdownMenuLink' role='button'>
               Tokenomics
             </a>
             <ul aria-labelledby='navbarDropdownMenuLink' class='dropdown-menu bg-dark-blue align-bottom'>
               <li>
-                <a class='dropdown-item navbar-icon'
-                   href='/pdf/crown-capital-whitepaper.pdf'
+                <a class='dropdown-item navbar-icon' href='/pdf/crown-capital-whitepaper.pdf'
                    target='_blank'>Whitepaper</a>
               </li>
               <li>
@@ -70,10 +85,11 @@
                 </a>
               </li>
               <li><a class='dropdown-item navbar-icon disabled' href='#'>Staking</a></li>
-              <li><a class='dropdown-item navbar-icon' data-bs-target='#faq-page' data-bs-toggle='collapse'>FAQ</a></li>
+              <li><a class='dropdown-item navbar-icon' data-bs-target='#faq-page' data-bs-toggle='collapse'>FAQ</a>
+              </li>
             </ul>
           </li>
-          <li class='nav-item dropdown fs-5'>
+          <li class='nav-item dropdown'>
             <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#' role='button'>
               Portfolio
             </a>
@@ -97,15 +113,15 @@
                 </a>
               </li>
               <li>
-                <a class='dropdown-item disabled' data-bs-target='#illuvium-page' data-bs-toggle='collapse'>
-                  <img alt='Illuvium Logo' class='navbar-icon' src='/images/illuvium-logo.svg'>
-                  Illuvium
+                <a class='dropdown-item' data-bs-target='#sheet6-page' data-bs-toggle='collapse'>
+                  <img alt='Mirandus Logo' class='navbar-icon' src='/images/gala-logo.png'>
+                  Mirandus
                 </a>
               </li>
               <li>
-                <a class='dropdown-item' data-bs-target='#mirandus-page' data-bs-toggle='collapse'>
-                  <img alt='Mirandus Logo' class='navbar-icon' src='/images/gala-logo.png'>
-                  Mirandus
+                <a class='dropdown-item disabled' data-bs-target='#illuvium-page' data-bs-toggle='collapse'>
+                  <img alt='Illuvium Logo' class='navbar-icon' src='/images/illuvium-logo.svg'>
+                  Illuvium
                 </a>
               </li>
               <li>
@@ -116,21 +132,7 @@
               </li>
             </ul>
           </li>
-          <li class='gold-text navbar-brand'>
-            <div class='container ps-5'>
-              <div class='row navbar-brand mx-auto d-block' style='width: 50%'>
-                <a data-bs-target='#landing-page' data-bs-toggle='collapse'>
-                  <img alt='Crown Capital Logo' class='img-responsive' src='images/crowndragon.png'>
-                </a>
-              </div>
-              <div class='row navbar-brand'>
-                <a class='fs-3' data-bs-target='#landing-page' data-bs-toggle='collapse'>
-                  <span class=' align-middle text-start'>Crown Capital</span>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class='nav-item dropdown fs-5'>
+          <li class='nav-item dropdown'>
             <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#'
                role='button'>
               Community
@@ -162,7 +164,7 @@
                 </svg>
                 Telegram</a>
               </li>
-              <li><a class='dropdown-item disabled' href='#'>
+              <li><a class='dropdown-item disabled position-relative' href='#'>
                 <svg class='bi bi-medium navbar-icon' fill='rgba(255,204,99,216)' height='16' viewBox='0 0 16 16'
                      width='16'
                      xmlns='http://www.w3.org/2000/svg'>
@@ -181,7 +183,7 @@
               </li>
             </ul>
           </li>
-          <li class='nav-item dropdown fs-5'>
+          <li class='nav-item dropdown'>
             <a aria-expanded='false' class='nav-link gold-text' data-bs-toggle='dropdown' href='#' role='button'>
               Governance
             </a>
@@ -197,8 +199,8 @@
                 </a>
               </li>
               <li>
-                <a class='dropdown-item navbar-icon' data-bs-target='#founder-page' data-bs-toggle='collapse'>
-                  Founder
+                <a class='dropdown-item navbar-icon' data-bs-target='#team-page' data-bs-toggle='collapse'>
+                  Team
                 </a>
               </li>
             </ul>
@@ -211,59 +213,40 @@
 <main>
 
   <!-- Landing Page -->
-  <div class='container-fluid py-5 my-5 collapse show align-middle' id='landing-page'>
+  <div class='container-sm py-5 my-5 collapse show' id='landing-page' style='max-width: 720px;'>
     <article>
       <section>
-        <div class='row'></div>
-        <h1 class='lead text-center pt-5 fs-1'>
-          Welcome
-        </h1>
-        <div class='row justify-content-evenly pt-5'>
-          <div class='col-3'></div>
-          <div class='col-6'>
-            <p class='fs-4 pt-5 text-start'>
-              <span class='fw-bold'>Crown Capital</span> is a decentralized autonomous organization focused on
-              developing a strong presence in the play-to-earn metaverse.
+        <div class='row pt-5 pb-5 bg-dark-blue-opaque rounded text-center'
+             style='max-width: 100%; font-size: 1.10rem !important;'>
+          <h4>Welcome</h4>
+          <div class='col pt-4'>
+            <p>
+              Crown Capital is a decentralized autonomous organization focused on
+              developing a strong presence in the play-to-earn metaverse and NFT economy.
+            </p>
+            <p class='pt-5'>
+              Our mission is to maximize value accrual while forging a dedicated &
+              passionate community of blockchain enthusiasts, investors, collectors, and players.
             </p>
           </div>
-          <div class='col-3'></div>
-        </div>
-        <div class='row justify-content-evenly pt-5'>
-          <div class='col-3'></div>
-          <div class='col-6'>
-            <p class='fs-4 pt-5 text-start'>
-              Our mission is to maximize value accrual while forging a
-              dedicated &
-              passionate community of blockchain
-              enthusiasts, investors, collectors, and players.</p>
-          </div>
-          <div class='col-3'></div>
         </div>
       </section>
     </article>
   </div>
 
   <!-- FAQ Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='faq-page'>
+  <div class='collapse container-sm my-5 py-5' id='faq-page' style='max-width: 720px;'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          FAQ
-        </h1>
-        <div class='container pt-5'>
-          <div class='row'>
-            <div class='col-3'></div>
-            <div class='col-6'>
-              <h4 class='text-center'>How can invest in Crown Capital?</h4>
-              <p class='text-center fs-5 my-5'>Crown Capital is currently in its pre-seed phase. To learn more please
-                read
-                our
-                <a class='gold-text' href='/pdf/crown-capital-whitepaper.pdf' target='_blank'>whitepaper</a> or visit
-                our community
-                section.
-              </p>
-            </div>
-            <div class='col-3'></div>
+        <h4 class='d-lg-none text-center'>FAQ</h4>
+        <div class='row bg-dark-blue-opaque rounded text-center pt-5 pb-5'
+             style='max-width: 100%; font-size: 1.10rem !important;'>
+          <div class='col'>
+            <h4>How can I invest in Crown Capital?</h4>
+            <p class='my-5'>Crown Capital is currently in its pre-seed phase. To learn more please
+              read our <a class='gold-text' href='/pdf/crown-capital-whitepaper.pdf' target='_blank'>whitepaper</a>
+              or visit our community section.
+            </p>
           </div>
         </div>
       </section>
@@ -271,15 +254,12 @@
   </div>
 
   <!-- Illuvium Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='illuvium-page'>
+  <div class='container-sm py-5 my-5 collapse' id='illuvium-page'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Illuvium
-        </h1>
+        <h4 class='d-lg-none text-center'>Illuvium</h4>
         <div class='row pt-5'>
-          <div class='col-2'></div>
-          <div class='col-8 opacity-75'>
+          <div class='col opacity-75'>
             <table class='table gold-text align-middle table-dark table-bordered border-warning'>
               <thead>
               </thead>
@@ -287,23 +267,31 @@
               </tbody>
             </table>
           </div>
-          <div class='col-2'></div>
         </div>
-        <p class='text-center fs-6 my-5'>Asset info coming soon!</p>
+        <p class='text-center my-5'>Asset info coming soon!</p>
       </section>
     </article>
   </div>
 
   <!-- Mirandus Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='mirandus-page'>
+  <div class='container-sm py-5 my-5 collapse' id='sheet6-page'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Mirandus
-        </h1>
+        <h4 class='d-lg-none text-center'>Mirandus</h4>
         <div class='row pt-5'>
-          <div class='col-2'></div>
-          <div class='col-8 opacity-75'>
+          <div class='col opacity-75'>
+            <div class='table-responsive-sm'>
+              <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class='row pt-5'>
+          <div class='col opacity-75'>
             <table class='table gold-text align-middle table-dark table-bordered border-warning'>
               <thead>
               </thead>
@@ -311,22 +299,28 @@
               </tbody>
             </table>
           </div>
-          <div class='col-2'></div>
+        </div>
+        <div class='row pt-5'>
+          <div class='col opacity-75'>
+            <table class='table gold-text align-middle table-dark table-bordered border-warning'>
+              <thead>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </article>
   </div>
 
   <!-- Echoes of Empire Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='echoes-of-empire-page'>
+  <div class='container-sm py-5 my-5 collapse' id='echoes-of-empire-page'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Echoes of Empire
-        </h1>
+        <h4 class='d-lg-none text-center'>Echoes of Empire</h4>
         <div class='row pt-5'>
-          <div class='col-2'></div>
-          <div class='col-8 opacity-75'>
+          <div class='col opacity-75'>
             <table class='table gold-text align-middle table-dark table-bordered border-warning'>
               <thead>
               </thead>
@@ -334,22 +328,18 @@
               </tbody>
             </table>
           </div>
-          <div class='col-2'></div>
         </div>
       </section>
     </article>
   </div>
 
   <!-- Axie Infinity Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='axie-infinity-page'>
+  <div class='container-sm py-5 my-5 collapse' id='axie-infinity-page'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Axie Infinity
-        </h1>
+        <h4 class='d-lg-none text-center'>Axie Infinity</h4>
         <div class='row pt-5'>
-          <div class='col-2'></div>
-          <div class='col-8 opacity-75'>
+          <div class='col opacity-75'>
             <table class='table gold-text align-middle table-dark table-bordered border-warning'>
               <thead>
               </thead>
@@ -357,23 +347,18 @@
               </tbody>
             </table>
           </div>
-          <div class='col-2'></div>
         </div>
       </section>
     </article>
   </div>
 
-  <!-- FAQ Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='escrow-accounts-page'>
+  <!-- Escrow Accounts Page -->
+  <div class='container-sm py-5 my-5 collapse' id='escrow-accounts-page'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Escrow Accounts
-          <i class='bi bi-wallet2'></i>
-        </h1>
+        <h4 class='d-lg-none text-center'>Escrow Accounts</h4>
         <div class='row pt-5'>
-          <div class='col-2'></div>
-          <div class='col-8 opacity-75'>
+          <div class='col opacity-75'>
             <table class='table gold-text align-middle table-dark table-bordered border-warning'>
               <thead>
               </thead>
@@ -381,22 +366,18 @@
               </tbody>
             </table>
           </div>
-          <div class='col-2'></div>
         </div>
       </section>
     </article>
   </div>
 
   <!-- Guild of Guardians Page -->
-  <div class='container-fluid py-5 my-5 collapse' id='guild-of-guardians-page'>
+  <div class='container-sm py-5 my-5 collapse' id='guild-of-guardians-page'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Guild of Guardians
-        </h1>
+        <h4 class='d-lg-none text-center'>Guild of Guardians</h4>
         <div class='row pt-5'>
-          <div class='col-2'></div>
-          <div class='col-8 opacity-75'>
+          <div class='col opacity-75'>
             <table class='table gold-text align-middle table-dark table-bordered border-warning'>
               <thead>
               </thead>
@@ -404,47 +385,47 @@
               </tbody>
             </table>
           </div>
-          <div class='col-2'></div>
         </div>
       </section>
     </article>
   </div>
 
-  <!-- Founder Page -->
-  <div class='container-fluid my-5 collapse' id='founder-page'>
+  <!-- Team Page -->
+  <div class='container-sm py-2 my-5 collapse text-center' id='team-page' style='max-width: 960px;'>
     <article>
       <section>
-        <h1 class='lead text-center display-5'>
-          Founder
-        </h1>
-        <div class='container pt-1'>
-          <div class='row'>
-            <div class='col-2'></div>
-            <div class='col-8'>
-              <div class='img-block text-center mb-5 pt-2'>
-                <img alt='Dylan Shub founder picture' class='img-fluid img-thumbnail rounded-circle'
-                     src='/images/dylan-shub.png'>
-                <div class='content mt-2'>
-                  <h4 class='pt-4'>Dylan Shub</h4>
-                  <p class='text-start fs-5'>‘Raised on art’, Dylan started attending Sotheby’s Auctions at the
-                    age of
-                    seven
-                    and
-                    formed his
-                    first collection of Royal Doulton character jugs at the age of nine. His formative years were filled
-                    with strategy games and collectible cards, such as Magic the Gathering of which he was South
-                    Africa’s youngest judge at the age of twelve. He has spent over a decade obsessed with the coming
-                    metaverse and ran active roleplay communities in Second Life.
-
-                    After completing his education, Dylan began managing his family’s investment portfolio as well as
-                    working as an independent private banker on behalf of high net worth individuals and family offices.
-                    In 2009 he co-hosted Israel’s first Wealth management conference with STEP. Since 2012 he has been a
-                    passionate investor in traditional collectables and in recent years has shifted his entire focus to
-                    NFTs and blockchain games.</p>
-                </div>
-              </div>
+        <h4 class='d-lg-none'>Team</h4>
+        <div class='row pt-4 pb-5'>
+          <div class='col'>
+            <div class='img-block'>
+              <img alt='Dylan Shub founder picture' class='img-fluid img-thumbnail rounded-circle'
+                   src='/images/dylan-shub.png'>
             </div>
-            <div class='col-2'></div>
+          </div>
+        </div>
+        <div class='row bg-dark-blue-opaque rounded text-center justify-content-center' style='max-width: 100%'>
+          <div class='col text-center' style='max-width: 720px;'>
+            <h4 class='pt-4'>Dylan Shub - Founder</h4>
+            <p class='pt-3'>
+              ‘Raised on art’, Dylan started attending Sotheby’s Auctions at the age of seven and formed his
+              first collection of Royal Doulton character jugs at the age of nine. His formative years were
+              filled
+              with strategy games and collectible cards, such as Magic the Gathering of which he was South
+              Africa’s youngest judge at the age of twelve. He has spent over a decade obsessed with the
+              coming
+              metaverse and ran active roleplay communities in Second Life.
+            </p>
+            <p class='pt-3 pb-2'>
+              After completing his education, Dylan began managing his family’s investment portfolio as well
+              as
+              working as an independent private banker on behalf of high net worth individuals and family
+              offices.
+              In 2009 he co-hosted Israel’s first Wealth management conference with STEP. Since 2012 he has
+              been a
+              passionate investor in traditional collectibles and in recent years has shifted his entire
+              focus to
+              NFTs and blockchain games.
+            </p>
           </div>
         </div>
       </section>
