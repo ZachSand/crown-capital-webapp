@@ -1,0 +1,377 @@
+[
+  [
+    "walking-dead-page",
+    {
+      "range": "'Walking Dead'!A1:B50",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "Land Deeds",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/105348027567345499003022799527820208748734864792910357943192030883268100358145\", \"Deed Claim Georgia (Common)\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/105348027567345499003022799527820208748734864792910357943192030884367611985921\", \"Deed Claim Georgia (Uncommon)\")",
+          1
+        ]
+      ]
+    }
+  ],
+  [
+    "axie-infinity-page",
+    {
+      "range": "'Axie Infinity'!A1:B50",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "Account",
+          "Axie Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:2ddf5b6bbb4d687560e09b79fa06e88e878c2d5a/axie/\", \"Chunin | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:69afb8ed5f611745acf741d5479869726a8fecc8/axie/\", \"Skru | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:5208b01081c1de539a4e58dd6b975067ce27e2d1/axie/\", \"Mitrigno | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:1ddea542577091d489dacdbc14c1006849950160/axie/\", \"Tuaniz | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:6de3850366d552d60d5cfb433c99cf257281d750/axie/\", \"Cryptojedi | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:30209cef2394664650583104752a6900b5e88fc5/axie/\", \"Tal | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:a73672954f1aa692484eb769cab757228150e545/axie/\", \"Phylo | Crown Capital\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://marketplace.axieinfinity.com/profile/ronin:a6de404611c8c97bf418edf37c4f1ec1520748cd/axie/\", \"Bl4ck_Dog | Crown Capital\")",
+          3
+        ]
+      ]
+    }
+  ],
+  [
+    "escrow-accounts-page",
+    {
+      "range": "'Escrow Accounts'!A1:B50",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "Escrow Accounts"
+        ],
+        [
+          "=HYPERLINK(\"https://etherscan.io/address/0x671e4d58f407be00fcc383732c020a7ac1afde73\", \"Escrow\")"
+        ],
+        [
+          "=HYPERLINK(\"https://etherscan.io/address/0x76EC16b0f5C2A1FF69e8FF9E873373B311900cB3\", \"Gala Games\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:69afb8ed5f611745acf741d5479869726a8fecc8\", \"Axie Infinity 1\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:2ddf5b6bbb4d687560e09b79fa06e88e878c2d5a\", \"Axie Infinity 2\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:5208b01081c1de539a4e58dd6b975067ce27e2d1\", \"Axie Infinity 3\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:1ddea542577091d489dacdbc14c1006849950160\", \"Axie Infinity 4\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:a73672954f1aa692484eb769cab757228150e545\", \"Axie Infinity 5\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:6de3850366d552d60d5cfb433c99cf257281d750\", \"Axie Infinity 6\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:a6de404611c8c97bf418edf37c4f1ec1520748cd\", \"Axie Infinity 7\")"
+        ],
+        [
+          "=HYPERLINK(\"https://explorer.roninchain.com/address/ronin:30209cef2394664650583104752a6900b5e88fc5\", \"Axie Infinity 8\")"
+        ]
+      ]
+    }
+  ],
+  [
+    "echoes-of-empire-page",
+    {
+      "range": "'Echoes of Empire'!A1:B50",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "Name",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/178307960266571754854808294294246542802944\", \"Ember's Grace Celestial Claim (Uncommon)\")",
+          "7"
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/178648242633492693318271668901678311014400\", \"Ember's Grace Celestial Claim (Rare)\")",
+          "2"
+        ]
+      ]
+    }
+  ],
+  [
+    "guild-of-guardians-page",
+    {
+      "range": "'Guild of Guardians'!A1:B50",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "Guilds",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0x56a900b85d309e0a981d59377ea76f12dcd4b8de&keywordSearch=guild&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Adventurers Guild\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/28583718821358830930923467024268529762304\", \"Warriors Guild\")",
+          1
+        ],
+        [
+          "Heroes",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Duren\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Elohatt\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Ewindel\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Farrah\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Gwynn\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Kanreh\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Miera\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Othrox\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Prielle\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Takati\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Epic Warrior Morax\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Elite Lia\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Cyrus\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Freia\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Helia\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Kharkuk\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Rufus\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Tavros\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0xee972ad3b8ac062de2e4d5e6ea4a37e36c849a11&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Legendary Tieroc\")",
+          1
+        ],
+        [
+          "Other",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://market.x.immutable.com/assets?collection=0x56a900b85d309e0a981d59377ea76f12dcd4b8de&sort[order_by]=buy_quantity&sort[direction]=asc\", \"Energy Token\")",
+          1
+        ]
+      ]
+    }
+  ],
+  [
+    "mirandus-page",
+    {
+      "range": "Mirandus!A1:B50",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "Land Deeds",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/223225232700135632031973742475239946715136\", \"Dock\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/30285130655963523248240340061427370819584\", \"Ranching Hamlet\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/28583718821358830930923467024268529762304\", \"Town of the Marquess\")",
+          1
+        ],
+        [
+          "Buildings",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/48320096102773261811799194255311086026752\", \"Archery\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/42535295865117307932921825928971026432000\", \"Armor Shop\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/43896425332801061786775324358698099277824\", \"Armor Stand\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/38451907462066046371361330639789807894528\", \"Barn\")",
+          2
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/37090777994382292517507832210062735048704\", \"Forge\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/78945509125657723523502908924170225057792\", \"Jeweler\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/91535956701732446671647769399145648881664\", \"Large Inn\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/59889696578085169569553930907991205216256\", \"Potion Shop\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/37771342728224169444434581424926271471616\", \"Simple Forge\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/43215860598959184859848575143834562854912\", \"Simple Granary\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/50702072671219831056042816507333463506944\", \"Simple Storehouse\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/49340943203536077202189318077606390661120\", \"Stable\")",
+          2
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/38111625095145107907897956032358039683072\", \"Tavern\")",
+          4
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/52063202138903584909896314937060536352768\", \"Temple\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/86772003564839308183160524895100893921280\", \"Tent\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/42875578232038246396385200536402794643456\", \"Weapon shop\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/49681225570457015665652692685038158872576\", \"Woodworking Stand\")",
+          1
+        ],
+        [
+          "Exemplars",
+          "Quantity"
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/115696004753119077577547366526801191895040\", \"Elf Exemplar: Brightsun Elves\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/119779393156170339139107861815982410432512\", \"Elf Exemplar: Earthlight Elves\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/121140522623854092992961360245709483278336\", \"Dwarf Exemplar: The Iron Shapers\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/110591769249305000625596747415324668723200\", \"Halfling Exemplar: Longsong\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/119439110789249400675644487208550642221056\", \"Halfling Exemplar: The Evenstrides\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/120459957890012216066034611030845946855424\", \"Human Exemplar: The Goldsmiths\")",
+          2
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/120119675523091277602571236423414178643968\", \"Human Exemplar: The Alchemist\")",
+          3
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/118077981321565646821790988778823569375232\", \"Human Exemplar: The Greencloaks\")",
+          1
+        ],
+        [
+          "=HYPERLINK(\"https://opensea.io/assets/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/120800240256933154529497985638277715066880\", \"Orc Exemplar: Orcs of Certainty\")",
+          1
+        ]
+      ]
+    }
+  ]
+]

@@ -111,26 +111,39 @@
       && data.properties.title.toLowerCase().includes('crown capital');
   }
 
-  const portfolioData = new Map();
+  let portfolioData = undefined;
 
-  $.get(googleSheetsBaseURL + spreadsheetId + apiKeyParam, function(spreadsheetData) {
-    if (isCrownCapitalSpreadsheet(spreadsheetData) && spreadsheetData.hasOwnProperty('sheets')) {
-      spreadsheetData.sheets.forEach(sheet => {
-        if (sheet.hasOwnProperty('properties') && sheet.properties.hasOwnProperty('title')) {
-          $.get(googleSheetsBaseURL + spreadsheetId + valuesEndpoint + sheet.properties.title + sheetRange + apiKeyParam + valueRenderOptionParam, function(sheetData) {
-            if (sheetData.hasOwnProperty('values') && sheetData.values.length) {
-              let portfolioDivId = sheet.properties.title.toLowerCase().replaceAll(' ', '-') + '-page';
-              portfolioData.set(portfolioDivId, sheetData);
+  $.getJSON('data/portfolio-data.json', function(portfolioJson) {
+    // Get data from saved JSON to avoid Google Sheet API query limit as sheet isn't changing super often
+    // If that fails, then get the sheet data directly from google sheets
+    if (portfolioJson && portfolioJson.length > 5) {
+      portfolioData = new Map(portfolioJson);
+    } else {
+      retrievePortfolioGoogleSheetData();
+    }
+  });
+
+  function retrievePortfolioGoogleSheetData() {
+    if (!portfolioData || portfolioData.size < 1) {
+      $.get(googleSheetsBaseURL + spreadsheetId + apiKeyParam, function(spreadsheetData) {
+        if (isCrownCapitalSpreadsheet(spreadsheetData) && spreadsheetData.hasOwnProperty('sheets')) {
+          spreadsheetData.sheets.forEach(sheet => {
+            if (sheet.hasOwnProperty('properties') && sheet.properties.hasOwnProperty('title')) {
+              $.get(googleSheetsBaseURL + spreadsheetId + valuesEndpoint + sheet.properties.title + sheetRange + apiKeyParam + valueRenderOptionParam, function(sheetData) {
+                if (sheetData.hasOwnProperty('values') && sheetData.values.length) {
+                  let portfolioDivId = sheet.properties.title.toLowerCase().replaceAll(' ', '-') + '-page';
+                  portfolioData.set(portfolioDivId, sheetData);
+                }
+              });
             }
           });
         }
-      });
+      })
+        .fail(function() {
+          console.error('Failed to load Portfolio data!');
+        });
     }
-  })
-    .fail(function() {
-      console.error('Failed to load Portfolio data!');
-    });
-
+  }
 
 })
 (jQuery);
