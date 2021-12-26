@@ -111,17 +111,21 @@
       && data.properties.title.toLowerCase().includes('crown capital');
   }
 
-  let portfolioData = undefined;
+  let portfolioData = new Map();
 
   $.getJSON('data/portfolio-data.json', function(portfolioJson) {
     // Get data from saved JSON to avoid Google Sheet API query limit as sheet isn't changing super often
     // If that fails, then get the sheet data directly from google sheets
     if (portfolioJson && portfolioJson.length > 5) {
       portfolioData = new Map(portfolioJson);
-    } else {
-      retrievePortfolioGoogleSheetData();
     }
-  });
+  })
+    .always(function() {
+      if (portfolioData.size === 0) {
+        retrievePortfolioGoogleSheetData();
+      }
+    });
+
 
   function retrievePortfolioGoogleSheetData() {
     if (!portfolioData || portfolioData.size < 1) {
