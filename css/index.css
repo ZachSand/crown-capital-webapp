@@ -55,9 +55,19 @@ body {
     background-color: rgb(6, 12, 24, 0.25) !important;
 }
 
+@font-face {
+    font-family: "Oxygen-Bold";
+    src: url("../fonts/Oxygen-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oxygen-Light";
+    src: url("../fonts/Oxygen-Light.ttf") format("truetype");
+}
+
 main h1 {
     color: rgba(255, 204, 99, 216);
-    font-family: 'Baskervville', serif;
+    font-family: 'Oxygen-Bold', serif;
 }
 
 main h4 {
@@ -89,7 +99,7 @@ th {
 
 main p {
     color: rgba(255, 255, 255, 0.95);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oxygen-Light', sans-serif;
 }
 
 .off-white-text {
